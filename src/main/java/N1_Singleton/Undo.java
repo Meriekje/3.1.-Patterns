@@ -41,4 +41,11 @@ public class Undo {
             }
         }
     }
+
+    @Override
+    public String toString() {
+        return "Undo{" +
+                "commandHistory=" + commandHistory +
+                '}';
+    }
 }

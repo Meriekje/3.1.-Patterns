@@ -1,6 +1,10 @@
 package N3_Command;
 
+import java.util.logging.Logger;
+
 public class Main {
+    private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
+    private static final String SEPARATOR = "-----";
 
     public static void main(String[] args) {
         Vehicle car = new Car();
@@ -17,7 +21,7 @@ public class Main {
         controller.setCommand(new Brake(car));
         controller.execute();
 
-        System.out.println("-----");
+        LOGGER.info(SEPARATOR);
 
 
         controller.setCommand(new Start(bike));
@@ -27,7 +31,7 @@ public class Main {
         controller.setCommand(new Brake(bike));
         controller.execute();
 
-        System.out.println("-----");
+        LOGGER.info(SEPARATOR);
 
         controller.setCommand(new Start(plane));
         controller.execute();
@@ -36,7 +40,7 @@ public class Main {
         controller.setCommand(new Brake(plane));
         controller.execute();
 
-        System.out.println("-----");
+        LOGGER.info(SEPARATOR);
 
         controller.setCommand(new Start(boat));
         controller.execute();

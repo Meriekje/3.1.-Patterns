@@ -7,7 +7,8 @@ public class CommandManager {
     private Undo undoManager;
     private Scanner scanner;
 
-    public CommandManager() {
+    public CommandManager
+            () {
         this.undoManager = Undo.getInstance();
         this.scanner = new Scanner(System.in);
     }

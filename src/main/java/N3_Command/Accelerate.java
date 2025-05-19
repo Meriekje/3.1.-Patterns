@@ -7,7 +7,7 @@ public class Accelerate implements Command {
         this.vehicle = vehicle;
     }
 
-    @Override
+
     public void execute() {
         vehicle.accelerate();
 
